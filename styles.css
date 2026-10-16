@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    color: antiquewhite;
+    background-color: black;
+}
+
+.heading{
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 50px;
+  font-stretch: 50%;
+
+
+}
+
+.content{
+    border: 8px solid white;
+    display: flex;
+    justify-content:center;
+    min-height: 600px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-image{
+    width: 700px;
+    height:auto;
+    
+
+}
+
+.text{
+    width: 700px;
+}
+
+
+.year{
+    font-size: 20px;
+}
+
