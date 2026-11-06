@@ -1,6 +1,8 @@
 const API_KEY = '4c72f87c0a984d659aa663d209f31122';
 const MAX_PAGES=500;
 
+let currentGame=null;
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -20,62 +22,55 @@ function updateUI(game) {
     // Store the URL on the button element
     insp_btn.setAttribute('data-url', game.storeUrl);
   }
-
-
   
 }
 
+const USE_MOCK=true;
+
 async function fetchNextGame() {
-    function truncateText(text, maxLength = 200) {
+  function truncateText(text, maxLength = 200) {
     if (!text) return '';
     if (text.length <= maxLength) return text;
-    
-    // Cut text at maxLength and ensure it doesn't break mid-word
     const trimmedText = text.substring(0, maxLength);
     return trimmedText.substring(0, trimmedText.lastIndexOf(' ')) + '...';
-}
+  }
+
   try {
+    let detailedGame;
 
-    const randomPage = getRandomInt(1, MAX_PAGES);
+    if (USE_MOCK) {
+      const res = await fetch('./games.json');
+      const data = await res.json();
+      const randomIndex = getRandomInt(0, data.results.length - 1);
+      detailedGame = data.results[randomIndex];
+    } else {
+      const randomPage = getRandomInt(1, MAX_PAGES);
+      const listResponse = await fetch(
+        `https://api.rawg.io/api/games?key=${API_KEY}&page=${randomPage}&page_size=10`
+      );
+      const listData = await listResponse.json();
+      if (!listData.results || listData.results.length === 0) return;
 
-    // 1. Fetch the list of games
-    const listResponse = await fetch(
-      `https://api.rawg.io/api/games?key=${API_KEY}&page=${randomPage}&page_size=10`
-    );
-    const listData = await listResponse.json();
-
-    if (listData.results && listData.results.length > 0) {
-      // 2. Pick a random game index out of the returned batch (0 through listData.results.length - 1)
-      const randomIndex = getRandomInt(0, listData.results.length - 1);
-      const basicGame = listData.results[randomIndex];
-
-      // 2. Fetch full details using the game's ID
+      const basicGame = listData.results[getRandomInt(0, listData.results.length - 1)];
       const detailResponse = await fetch(
         `https://api.rawg.io/api/games/${basicGame.id}?key=${API_KEY}`
       );
-      const detailedGame = await detailResponse.json();
-
-      // 3. Clean up the detailed description
-      // RAWG returns descriptions formatted in HTML, so we strip out HTML tags
-      const cleanDescription = detailedGame.description_raw || 
-        detailedGame.description.replace(/<[^>]*>?/gm, '');
-
-      
-
-      // 4. Construct complete game object
-      const gameData = {
-        title: detailedGame.name,
-        image: detailedGame.background_image,
-        year: detailedGame.released ? detailedGame.released.split('-')[0] : 'N/A',
-        description: truncateText(cleanDescription, 300), // Real text summary of the game!
-
-        storeUrl: detailedGame.website || `https://store.steampowered.com/search/?term=${encodeURIComponent(detailedGame.name)}`
-
-      };
-
-      updateUI(gameData);
-      
+      detailedGame = await detailResponse.json();
     }
+
+    const cleanDescription = detailedGame.description_raw ||
+      (detailedGame.description || '').replace(/<[^>]*>?/gm, '');
+
+    const currentGame = {
+      title: detailedGame.name,
+      image: detailedGame.background_image,
+      year: detailedGame.released ? detailedGame.released.split('-')[0] : 'N/A',
+      description: truncateText(cleanDescription, 300),
+      storeUrl: detailedGame.website ||
+        `https://store.steampowered.com/search/?term=${encodeURIComponent(detailedGame.name)}`
+    };
+
+    updateUI(currentGame);
   } catch (error) {
     console.error('Error fetching game details:', error);
   }
