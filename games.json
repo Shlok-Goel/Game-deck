@@ -1,0 +1,127 @@
+{
+  "count": 10,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": 3498,
+      "slug": "grand-theft-auto-v",
+      "name": "Grand Theft Auto V",
+      "released": "2013-09-17",
+      "background_image": "https://placehold.co/600x400?text=Grand+Theft+Auto+V",
+      "website": "https://www.rockstargames.com/gta-v",
+      "description_raw": "Three criminals with very different goals get pulled into a series of heists in the sprawling city of Los Santos. Switch between the characters at any time, explore a huge open world on foot or by vehicle, and take on story missions, side activities and online play. It mixes crime drama, dark humour and large-scale action.",
+      "description": "<p>Three criminals with very different goals get pulled into a series of heists in the sprawling city of Los Santos. Switch between the characters at any time, explore a huge open world on foot or by vehicle, and take on story missions, side activities and online play. It mixes crime drama, dark humour and large-scale action.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 3328,
+      "slug": "the-witcher-3-wild-hunt",
+      "name": "The Witcher 3: Wild Hunt",
+      "released": "2015-05-18",
+      "background_image": "https://placehold.co/600x400?text=The+Witcher+3+Wild+Hunt",
+      "website": "https://thewitcher.com/en/witcher3",
+      "description_raw": "Play as Geralt of Rivia, a monster hunter searching for a young woman who is being hunted across a war-torn continent. Choose how to handle contracts, political conflicts and personal dilemmas, with consequences that carry through the story. The world is large, full of side quests, and built around meaningful choices.",
+      "description": "<p>Play as Geralt of Rivia, a monster hunter searching for a young woman who is being hunted across a war-torn continent. Choose how to handle contracts, political conflicts and personal dilemmas, with consequences that carry through the story. The world is large, full of side quests, and built around meaningful choices.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 4200,
+      "slug": "portal-2",
+      "name": "Portal 2",
+      "released": "2011-04-18",
+      "background_image": "https://placehold.co/600x400?text=Portal+2",
+      "website": "http://www.thinkwithportals.com",
+      "description_raw": "A first-person puzzle game where you use a portal gun to move between two linked openings and solve test chambers. New gels and light bridges add fresh mechanics, and a cooperative mode lets two players work through separate challenges. Sharp writing and a memorable cast keep the story engaging.",
+      "description": "<p>A first-person puzzle game where you use a portal gun to move between two linked openings and solve test chambers. New gels and light bridges add fresh mechanics, and a cooperative mode lets two players work through separate challenges. Sharp writing and a memorable cast keep the story engaging.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 5286,
+      "slug": "tomb-raider",
+      "name": "Tomb Raider",
+      "released": "2013-03-05",
+      "background_image": "https://placehold.co/600x400?text=Tomb+Raider",
+      "website": "",
+      "description_raw": "A reboot that follows a young Lara Croft as she is stranded on a dangerous island after a shipwreck. She must scavenge, hunt and fight to survive while uncovering the island's secrets. Exploration, climbing and cinematic combat drive the adventure.",
+      "description": "<p>A reboot that follows a young Lara Croft as she is stranded on a dangerous island after a shipwreck. She must scavenge, hunt and fight to survive while uncovering the island's secrets. Exploration, climbing and cinematic combat drive the adventure.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 13536,
+      "slug": "portal",
+      "name": "Portal",
+      "released": "2007-10-09",
+      "background_image": "https://placehold.co/600x400?text=Portal",
+      "website": "http://www.whatistheorangebox.com",
+      "description_raw": "You wake up in a research facility and are handed a device that creates linked portals on flat surfaces. Using momentum and clever thinking, you move through increasingly tricky test chambers under the watch of a sarcastic computer. It is short, inventive and widely loved.",
+      "description": "<p>You wake up in a research facility and are handed a device that creates linked portals on flat surfaces. Using momentum and clever thinking, you move through increasingly tricky test chambers under the watch of a sarcastic computer. It is short, inventive and widely loved.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 12020,
+      "slug": "left-4-dead-2",
+      "name": "Left 4 Dead 2",
+      "released": "2009-11-17",
+      "background_image": "https://placehold.co/600x400?text=Left+4+Dead+2",
+      "website": "",
+      "description_raw": "A cooperative shooter where four survivors fight through hordes of infected across several campaigns. An AI Director changes enemy placement, items and pacing each run so no two attempts feel the same. It supports versus modes and a wide range of weapons, including melee options.",
+      "description": "<p>A cooperative shooter where four survivors fight through hordes of infected across several campaigns. An AI Director changes enemy placement, items and pacing each run so no two attempts feel the same. It supports versus modes and a wide range of weapons, including melee options.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 802,
+      "slug": "borderlands-2",
+      "name": "Borderlands 2",
+      "released": "2012-09-18",
+      "background_image": "https://placehold.co/600x400?text=Borderlands+2",
+      "website": "https://borderlands.com",
+      "description_raw": "A loot-driven shooter set on the lawless planet of Pandora, where you hunt for vaults while opposing the tyrant Handsome Jack. Pick one of several character classes, collect a near endless supply of randomised guns, and play solo or with friends. The cel-shaded art and irreverent humour define its tone.",
+      "description": "<p>A loot-driven shooter set on the lawless planet of Pandora, where you hunt for vaults while opposing the tyrant Handsome Jack. Pick one of several character classes, collect a near endless supply of randomised guns, and play solo or with friends. The cel-shaded art and irreverent humour define its tone.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 28,
+      "slug": "red-dead-redemption-2",
+      "name": "Red Dead Redemption 2",
+      "released": "2018-10-26",
+      "background_image": "https://placehold.co/600x400?text=Red+Dead+Redemption+2",
+      "website": "https://www.rockstargames.com/reddeadredemption2",
+      "description_raw": "In 1899 the Van der Linde gang is on the run as the American frontier fades. As Arthur Morgan, you ride, hunt, rob and make choices that shape your standing with the gang and the world around you. The game focuses on detail, atmosphere and a slow-burning story.",
+      "description": "<p>In 1899 the Van der Linde gang is on the run as the American frontier fades. As Arthur Morgan, you ride, hunt, rob and make choices that shape your standing with the gang and the world around you. The game focuses on detail, atmosphere and a slow-burning story.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 4062,
+      "slug": "bioshock-infinite",
+      "name": "BioShock Infinite",
+      "released": "2013-03-26",
+      "background_image": "https://placehold.co/600x400?text=BioShock+Infinite",
+      "website": "",
+      "description_raw": "Booker DeWitt is sent to the floating city of Columbia to rescue a mysterious young woman named Elizabeth. Combine firearms with supernatural powers called Vigors, and use the sky-rails for fast traversal. The story deals with politics, belief and alternate realities.",
+      "description": "<p>Booker DeWitt is sent to the floating city of Columbia to rescue a mysterious young woman named Elizabeth. Combine firearms with supernatural powers called Vigors, and use the sky-rails for fast traversal. The story deals with politics, belief and alternate realities.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    },
+    {
+      "id": 3439,
+      "slug": "life-is-strange-episode-1",
+      "name": "Life is Strange: Episode 1",
+      "released": "2015-01-29",
+      "background_image": "https://placehold.co/600x400?text=Life+is+Strange+Episode+1",
+      "website": "https://lifeisstrange.square-enix-games.com",
+      "description_raw": "A student discovers she can rewind time and uses the ability to change small and large events around her. Dialogue choices and exploration shape relationships with her friends and the people of her town. This first episode sets up a mystery and the series' emotional, story-focused style.",
+      "description": "<p>A student discovers she can rewind time and uses the ability to change small and large events around her. Dialogue choices and exploration shape relationships with her friends and the people of her town. This first episode sets up a mystery and the series' emotional, story-focused style.</p>",
+      "rating": 4.2,
+      "metacritic": 90
+    }
+  ]
+}
